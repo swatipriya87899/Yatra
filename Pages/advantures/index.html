@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Yatra</title>
+</head>
+
+<body>
+    <!-- navBar -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Yatra</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Pages/reservation/index.html" class="nav-link">Reservations</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- header -->
+    <div class="headers">
+        <div class="heading">
+            Explore all adventures
+        </div>
+        <div class="sub_heading">
+            Here's a list of places that you can explore in city
+        </div>
+        <hr>
+        <div class="filter">
+            <span>filter</span>
+            <span class="line">|</span>
+            <div class="filter_box">
+                <select name="duration" id="filter_by_duration" onchange="onChange()">
+                    <option value="00-24" disabled selected id="disabled_dur">filter by duration (hours)</option>
+                    <option value="00-02">0-2 hours</option>
+                    <option value="02-06">2-6 hours</option>
+                    <option value="06-12">6-12 hours</option>
+                    <option value="12-24">12+ hours</option>
+                </select>
+                <span class="clear" onclick="clear_duration()">clear</span>
+            </div>
+            <span class="line">|</span>
+            <div class="category-box">
+                <select name="category" id="filter_by_cat" onchange="onChange()">
+                    <option value="none" disabled selected id="disabled">Add category</option>
+                    <option value="Cycling">Cycling</option>
+                    <option value="Hillside">Hillside Gateway</option>
+                    <option value="Beaches">Serene beach</option>
+                    <option value="Party">Party Spot</option>
+                </select>
+                <span class="clear" onclick="clear_cat()">clear</span>
+            </div>
+            <span class="line">|</span>
+        </div>
+        <hr>
+    </div>
+
+    <!-- category show div -->
+    <div id="category_show">
+        <!-- <span class="category">
+             Cycling
+        </span>
+        <span class="category">
+            Cycling2
+       </span> -->
+    </div>
+
+    <!-- cards -->
+    <div id="card_group">
+        <!-- <div id="card">
+            <div id="card_img">
+                <img src="/images/heroImg.png" alt="">
+            </div>
+            <div id="card_text">
+                <div id="name_cost">
+                    <div id="name">Name</div>
+                    <div id="cost1">cost</div>
+                </div>
+                <div id="duration_cost">
+                    <div id="duration">Name</div>
+                    <div id="cost2">cost</div>
+                </div>
+            </div>
+            <div id="cat_div_box">
+                Cycling
+            </div> -->
+    </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-text">
+            © Yatra 2021 | Swati Priya
+        </div>
+    </div>
+
+    <!-- javaScript link -->
+    <script src="index.js">
+    </script>
+</body>
+
+</html>

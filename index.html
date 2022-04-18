@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Yatra</title>
+</head>
+
+<body>
+
+    <!-- navBar -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Yatra</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Pages/reservation/index.html" class="nav-link">Reservations</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- heroSection -->
+    <div class="hero-section">
+        <div class="hero-image">
+            <div class="container">
+
+                <div class="heading">
+                    Welcome to Yatra
+                </div>
+                <div class="content">
+                    <div class="content-text">Explore the world with fantastic places to venture around</div> <br>
+                    <form id="city-filter">
+                        <input type="text" onkeyup="searchFunction()" placeholder="Search a city" class="search-box" id="search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <br>
+
+
+    <!-- cities card -->
+    <div id="all_cities">
+        <!-- <div id="cities">
+            <img alt="" id="city-image">
+            <div id="city-text">
+                <h3 id="city-name"></h3>
+                <h5 id="city-description"></h5>
+            </div>
+        </div> -->
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-text">
+            © Yatra 2021 | Swati Priya
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- javaScript link -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
